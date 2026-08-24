@@ -1,13 +1,11 @@
-import kids from "@/assets/kids2.png.asset.json";
-import multi from "@/assets/multi_vitamin_1.png.asset.json";
-import shilajit from "@/assets/silajit_1.png.asset.json";
-import logo from "@/assets/logo_sonrup.png.asset.json";
+import kids from "@/assets/kids.jpg";
+import multi from "@/assets/multi-vitamin.jpg";
+import shilajit from "@/assets/shilajit.jpg";
 
-export const BRAND_LOGO = logo.url;
 export const IMG = {
-  kids: kids.url,
-  multi: multi.url,
-  shilajit: shilajit.url,
+  kids,
+  multi,
+  shilajit,
 };
 
 export type Product = {
