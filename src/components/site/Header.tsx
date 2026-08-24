@@ -2,7 +2,6 @@ import { Link, useNavigate } from "@tanstack/react-router";
 import { Heart, Menu, Search, ShoppingBag, User, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { BRAND_LOGO } from "@/lib/products";
 import { useStore } from "@/lib/store";
 
 const NAV = [
@@ -66,8 +65,9 @@ export function Header() {
       >
         <div className="mx-auto flex max-w-[1400px] items-center gap-6 px-5 lg:px-10">
           <Link to="/" className="flex shrink-0 items-center gap-1">
-            <span className="font-display text-2xl font-extrabold tracking-[-0.06em]">s</span>
-            <img src={BRAND_LOGO} alt="Sonrup" className="h-7 w-auto brightness-[0.35] contrast-150 saturate-150" />
+            <span className="font-display text-2xl font-extrabold lowercase tracking-[-0.06em]">
+              sonrup<span className="text-gradient-gold">.</span>
+            </span>
           </Link>
 
           <nav className="hidden flex-1 items-center justify-center gap-7 lg:flex">

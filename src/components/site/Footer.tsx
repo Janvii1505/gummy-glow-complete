@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Youtube, Mail, Phone } from "lucide-react";
-import { BRAND_LOGO } from "@/lib/products";
 import { BrandButton } from "./Primitives";
 
 export function Footer() {
@@ -13,8 +12,9 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
             <div className="flex items-center gap-1">
-              <span className="font-display text-3xl font-extrabold tracking-[-0.06em] text-cream">s</span>
-              <img src={BRAND_LOGO} alt="Sonrup" className="h-8 w-auto" />
+              <span className="font-display text-3xl font-extrabold lowercase tracking-[-0.06em] text-cream">
+                sonrup<span className="text-primary">.</span>
+              </span>
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/65">
               Delicious daily gummies made with real fruit flavours and actives that actually earn their place.
